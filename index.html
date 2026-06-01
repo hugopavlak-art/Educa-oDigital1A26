@@ -30,7 +30,6 @@
             flex-direction: column;
         }
         .meu-post-destaque {
-            border: 5px solid #183C63;
             padding: 16px;
             margin-bottom: 20px;
         }
@@ -59,6 +58,13 @@
             font-size: 16px;
             color: #183C63;
         }
+        /* Garantindo que as novas imagens fiquem bem dimensionadas */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px 0;
+        }
     </style>
 </head>
 <body>
@@ -69,15 +75,31 @@
     </header>
 
     <main>
+        <!-- PRIMEIRA IMAGEM E POST ADICIONADOS -->
+        <img src="imagem-blog.png"
+             alt="Logotipo conceitual de tecnologia e educacao: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
+
         <div class="meu-post-destaque">
             <h2>Meu primeiro post</h2>
-            <p class="artigo-autor">Por: Marcelo Paludetto </p>
+            <p class="artigo-autor">Por: Marcelo Paludetto</p>
             <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
-            
             <button class="botao-coracao">❤️<span>0</span></button>
             <button class="botao-coracao">👍<span>0</span></button>
         </div>
 
+        <!-- SEGUNDA IMAGEM E POST ADICIONADOS -->
+        <img src="imagem-blog.png"
+             alt="Logotipo conceitual de tecnologia e educacao: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
+
+        <div class="meu-post-destaque">
+            <h2>Meu primeiro post</h2>
+            <p class="artigo-autor">Por: Marcelo Paludetto</p>
+            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
+            <button class="botao-coracao">❤️<span>0</span></button>
+            <button class="botao-coracao">👍<span>0</span></button>
+        </div>
+
+        <!-- AS SEÇÕES ANTIGAS FORAM MANTIDAS LOGO ABAIXO -->
         <section>
             <h2>Título principal</h2>
             <h3>Subtítulo</h3>
