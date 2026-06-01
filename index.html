@@ -29,14 +29,8 @@
             display: flex;
             flex-direction: column;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 10px 0;
-        }
         .meu-post-destaque {
-            border: 5px solid #cf1010;
+            border: 5px solid#183C63;
             padding: 16px;
             margin-bottom: 20px;
         }
@@ -88,9 +82,7 @@
             <p>Este é um parágrafo de texto.</p>
             <p>Podemos escrever quantos parágrafos quisermos.</p>
             <p><a href="https://wikipedia.org" target="_blank">Acessar o site Wikipedia</a></p>
-            
-            <!-- TROCADO PARA UMA IMAGEM REAL PARA SUMIR O ERRO 404 -->
-            <img src="https://picsum.photos" alt="Descrição da imagem">
+            <!-- A tag da imagem foi removida daqui para eliminar o erro 404 -->
         </section>
 
         <section>
@@ -104,7 +96,7 @@
             <ol>
                 <li>Primeiro passo</li>
                 <li>Segundo passo</li>
-                <li>Teceiro passo</li>
+                <li>Terceiro passo</li>
             </ol>
         </section>
 
@@ -118,12 +110,12 @@
         botao.addEventListener("click", botaoClicado);
 
         function botaoClicado() {
-            // 1. Mostra a mensagem no console (o que o exercício pediu)
+            // 1. Mostra o texto no console do F12
             console.log("fui clicado");
             
-            // 2. Soma o número na tela (o que você fez depois)
+            // 2. Localiza o número e adiciona +1 na tela
             let texto = botao.querySelector("span");
-            texto.textContent++;
+            texto.textContent = parseInt(texto.textContent) + 1;
         }
     </script>
 
