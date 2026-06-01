@@ -88,7 +88,9 @@
             <p>Este é um parágrafo de texto.</p>
             <p>Podemos escrever quantos parágrafos quisermos.</p>
             <p><a href="https://wikipedia.org" target="_blank">Acessar o site Wikipedia</a></p>
-            <img src="imagem.png" alt="Descrição da imagem">
+            
+            <!-- TROCADO PARA UMA IMAGEM REAL PARA SUMIR O ERRO 404 -->
+            <img src="https://picsum.photos" alt="Descrição da imagem">
         </section>
 
         <section>
@@ -102,7 +104,7 @@
             <ol>
                 <li>Primeiro passo</li>
                 <li>Segundo passo</li>
-                <li>Terceiro passo</li>
+                <li>Teceiro passo</li>
             </ol>
         </section>
 
@@ -115,9 +117,13 @@
         const botao = document.querySelector("button");
         botao.addEventListener("click", botaoClicado);
 
-        // SUA FUNÇÃO COM O CONSOLE LOG:
         function botaoClicado() {
+            // 1. Mostra a mensagem no console (o que o exercício pediu)
             console.log("fui clicado");
+            
+            // 2. Soma o número na tela (o que você fez depois)
+            let texto = botao.querySelector("span");
+            texto.textContent++;
         }
     </script>
 
