@@ -27,7 +27,7 @@
             padding: 20px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             display: flex;
-            flex-direction: column; /* Ajustado para organizar o conteúdo verticalmente */
+            flex-direction: column;
         }
         img {
             max-width: 100%;
@@ -35,11 +35,18 @@
             display: block;
             margin: 10px 0;
         }
-        /* Nova classe para o destaque que você tentou criar */
         .meu-post-destaque {
-            border: 5px solid #0088ff;
+            border: 5px solid #cf1010;
             padding: 16px;
             margin-bottom: 20px;
+        }
+        div p {
+            font-weight: bold;
+        }
+
+        /* NOVA REGRA ADICIONADA AQUI: */
+        .artigo-autor {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -51,10 +58,9 @@
     </header>
 
     <main>
-        <!-- A div foi colocada aqui dentro e recebeu a classe CSS de borda -->
         <div class="meu-post-destaque">
             <h2>Meu primeiro post</h2>
-            <p><strong>Por:</strong> Marcelo Paludetto</p>
+            <p class="artigo-autor">Por: Marcelo Paludetto </p>
             <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
         </div>
 
