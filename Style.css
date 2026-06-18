@@ -1,14 +1,10 @@
 header {
     background-color: #00e3f7;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
     padding: 16px;
-}
-
-.artigo-autor {
-    font-weight: bold;
 }
 
 main {
@@ -17,6 +13,10 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 16px;
+}
+
+.artigo-autor {
+    font-weight: bold;
 }
 
 article {
