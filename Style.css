@@ -1,69 +1,51 @@
-/* Configurações do corpo da página para dar uma margem geral em volta */
 body {
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 20px;
-    font-family: sans-serif;
+    max-width: 100vw;
 }
 
-/* Cabeçalho destacado em azul e centralizado */
 header {
     background-color: #07376b;
     color: #FFFFFF;
     text-align: center;
-    max-width: 800px;
-    margin: 0 auto 20px auto;
-    padding: 26px;
-    border-radius: 8px;
+    margin: 0 auto;
+    padding: 16px;
 }
 
 .artigo-autor {
     font-weight: bold;
 }
 
-/* Área principal com fundo verde */
 main {
     background-color: #09e477;
     color: #000000;
-    max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 16px;
 }
 
-/* Cada post fica centralizado, com textos um embaixo do outro */
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 article {
     display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    text-align: center;     
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #183C63;
+    margin: 16px;
     gap: 16px;
-    margin-bottom: 32px;    
-    background-color: rgba(255, 255, 255, 0.6); /* Fundo branco suave para destacar o post */
-    padding: 20px;
-    border-radius: 8px;
+    padding: 16px;
+    flex: 1 1 25%;
 }
 
-/* Controla o tamanho menor das imagens */
 main img {
-    width: 140px;   
-    height: 140px;
-    object-fit: cover; 
-    border-radius: 8px;
+    height: 80px;
     display: block;
 }
 
-h2, p, button {
-    margin-bottom: 12px;
-}
-
-/* Deixa os botões mais bonitos e alinhados */
+h2,
+p,
 button {
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    padding: 8px 16px;
-    margin: 0 6px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 1rem;
+    margin-bottom: 12px;
 }
