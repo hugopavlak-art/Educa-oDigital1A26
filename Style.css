@@ -37,7 +37,7 @@ body {
 
 header {
     background-color: var(--cor-primaria);
-    color: var(var(--cor-contraste));
+    color: var(--cor-contraste);
     text-align: center;
     margin: 0 auto;
     padding: 16px;
@@ -49,7 +49,7 @@ header {
 
 main {
     background-color: var(--cor-fundo);
-    color: var(var(--cor-texto));
+    color: var(--cor-texto);
     margin: 0 auto;
     padding: 16px;
 }
